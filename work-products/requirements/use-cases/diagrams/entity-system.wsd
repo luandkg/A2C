@@ -1,0 +1,10 @@
+@startuml Entidade Sistema
+left to right direction
+actor sistema
+
+sistema -- (Verificar usuario)
+sistema -- (Bloquear usuario)
+sistema -- (Criar método de pagamento)
+sistema -- (Alterar método de pagamento)
+sistema -- (Excluir método de pagamento)
+@enduml

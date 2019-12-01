@@ -1,0 +1,15 @@
+@startuml Entidade Usuário
+left to right direction
+actor usuario
+actor motorista
+actor passageiro
+
+motorista <|-- usuario
+passageiro <|-- usuario
+
+usuario -- (Criar/Editar/Deletar Usuário)
+usuario -- (Realizar Login)
+usuario -- (Recuperar Senha)
+usuario -- (Verificar Conta)
+usuario -- (Desativar Conta)
+@enduml

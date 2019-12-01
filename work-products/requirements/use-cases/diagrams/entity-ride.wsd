@@ -1,0 +1,27 @@
+@startuml Entidade Carona
+left to right direction
+actor motorista
+actor passageiro
+actor sistema
+
+rectangle Veículo {
+    (Validar veículo) -- sistema
+    motorista -- (Cadastrar veículo)
+    motorista -- (Editar veículo)
+    motorista -- (Deletar Veiculo)
+}
+
+rectangle Carona {
+    (Criar/Editar/Deletar carona) -- motorista
+    (Consultar carona) -- motorista
+    (Iniciar carona) -- motorista
+    (Finalizar carona) -- motorista
+    (Consultar/Histórico de caronas) -- motorista
+    (Avaliar carona) -- motorista
+    (Listar caronas) -- motorista
+    passageiro -- (Consultar/Histórico de caronas)
+    passageiro -- (Agendar carona)
+    passageiro -- (Listar caronas)
+    passageiro -- (Avaliar carona)
+}
+@enduml
